@@ -96,6 +96,6 @@ async function getTopic(id) {
 }
 */
 exports.addNewTopic = addNewTopic;
-exports.addNewOpinion = addNewOpinion;
-exports.getTopics = getTopics;
-exports.getTopic = getTopic;
+//exports.addNewOpinion = addNewOpinion;
+//exports.getTopics = getTopics;
+//exports.getTopic = getTopic;
