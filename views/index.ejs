@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DiscussIt!</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles/styles.css" />
+    <script src="/scripts/main.js" defer></script>
+  </head>
+  <body>
+    <dialog id="statement-dialog">
+      <h2>Share a new discussion topic</h2>
+      <form action="/topic" method="POST">
+        <div class="form-control">
+          <label for="title">Color</label>
+          <input type="text" name="title" id="title" required />
+        </div>
+        <div class="form-control">
+          <label for="user">Your name</label>
+          <input type="text" name="user" id="user" required />
+        </div>
+        <div>
+          <button type="button" class="btn-alt">Cancel</button>
+          <button class="btn">Share!</button>
+        </div>
+      </form>
+    </dialog>
+    <header id="main-header">
+      <nav>
+        <label for="topic">All Topics</label>
+      </nav>
+    </header>
+    <main>
+      <header>
+        <div class="rounded-img">
+          <img src="/images/announce.png" alt="A megaphone." />
+        </div>
+        <h1>Discuss it!</h1>
+      </header>
+    </main>
+  </body>
+</html>
